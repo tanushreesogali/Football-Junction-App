@@ -1,36 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
 // import Header from './Components/Header';
 import Footer from './Components/Footer';
 import MainBody from "./Components/MainBody";
 
+export default function Home() {
+  useEffect(() => {
+    const footer = document.getElementById('footer');
+    const sidebar = document.getElementById('sidebar');
 
-export default function Home(){
-    document.addEventListener('DOMContentLoaded', () => {
-        const footer = document.querySelector('.footer-css');
-        const sidebar = document.querySelector('.socials-column');
+    if (!footer || !sidebar) return;
 
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    sidebar.style.display = 'none';
-                } else {
-                    sidebar.style.display = 'block';
-                }
-            });
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.intersectionRatio >= 0.6) {
+            sidebar.style.display = 'none';
+          } else {
+            sidebar.style.display = 'flex';
+          }
         });
+      },
+      { threshold: 0.6 } 
+    );
 
-        observer.observe(footer);
-    });
+    observer.observe(footer);
 
-    return(
-        <div>
-            <MainBody/>
-            <Footer/>
-            
-        </div>
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
-
-    )
-
-
+  return (
+    <div>
+      <MainBody />
+      <Footer id="footer" />          
+    </div>
+  );
 }
