@@ -15,7 +15,7 @@ export default function Socials() {
   ];
 
   return (
-    <div className="socials-column">
+    <div className="socials-column" id="sidebar">
       {icons.map((icon, index) => (
         <div key={index} className="social-icon-container">
           <img src={icon.src} alt={icon.alt} className="social-icon" />
@@ -24,5 +24,8 @@ export default function Socials() {
     </div>
   );
 }
+
+
+
 
 
