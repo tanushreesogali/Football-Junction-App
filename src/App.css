@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Antenna', sans-serif;
 }
 
 * {
@@ -653,7 +654,46 @@ body {
 }
 .news-item-text-container{
   display: flex;
+  padding: 0px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
 
+}
+.news-item-viewall-container{
+  display: flex;
+  height: 48px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6px;
+  align-self: stretch;
+  border-radius: 6px;
+
+}
+.news-item-viewall-button{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  border: none;
+  background-color: #FFFDF7;
+
+}
+.news-item-viewall-icon{
+  display: flex;
+  padding: 6px;
+  align-items: center;
+  gap: 6px;
+  width: 13.5px;
+  height: 13.5px;
+  border-radius: 300px;
+
+}
+.news-item-viewall-text{
+  font-family: 'Antenna', sans-serif;
+  font-weight: 700;
+  line-height: 140%; 
+  text-align: left;
 }
 
 
