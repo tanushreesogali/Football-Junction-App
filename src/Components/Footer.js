@@ -14,7 +14,7 @@ import image9 from "./images/Footer About Image.png";
 
 export default function Footer(){
     return(
-        <div className="footer-css">
+        <div className="footer-css" id="footer">
             <div className="newsletter-section">
                 <img src={newslettering} alt="newsletter"/>
                 <div className="newsletter-content">
