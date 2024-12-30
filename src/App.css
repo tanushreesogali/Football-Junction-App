@@ -738,6 +738,7 @@ body {
 
 }
 .view-all-text{
+  font-family: 'Antenna', sans-serif;
   color: var(--Text-Secondary, #F4F4F4);
   font-style: normal;
   font-weight: 700;
