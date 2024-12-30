@@ -929,10 +929,10 @@ body {
     font-size: 7.333px;
     line-height: 120%;
     border-radius: 15px; /* Adjust border radius */
+  }  
+
+  .match-center-container{
+    width: 100%;
   }
-
-
-
-  
   
 }
