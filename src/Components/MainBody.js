@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "./Header";
 import Socials from "./Socials";
 import ViewAll from "./ViewAll";
@@ -14,10 +13,10 @@ import teamicon1 from "./images/Match Center Icon.png";
 import teamicon2 from "./images/Match Center Icon (1).png";
 import teamicon3 from "./images/Match Center Icon (2).png";
 import teamicon4 from "./images/Match Center Icon (3).png";
-
-
+import React from "react";
 
 export default function MainBody(){
+    
     return(
         <div className="container-align">
             <Header/>
@@ -26,8 +25,10 @@ export default function MainBody(){
                 <div className="hero-section">
                     <div className="hero-section-1">
                         {/* image */}
-                        <p className="p1">Football Junction Foundation</p>
-                        <p className="p2">Fostering football across all ages</p>
+                        <div className="hero-section-content">
+                            <p className="p1">Football Junction Foundation</p>
+                            <p className="p2">Fostering football across all ages</p>
+                        </div>
                     </div>
                     
                   
@@ -58,32 +59,7 @@ export default function MainBody(){
                                 </button>
                             </div>
                         </div>
-
-                    
-                        {/* <div className="corporate-ball-game-top">
-                            <img className="corporate-ball-game-img" src={ballgame} alt="ballgame background" />
-                        </div>
-                        <div className="corporate-content-container">
-                            <button className="corporate-nav-button-left">
-                                <LeftArrow className="corporate-game-nav"/>
-                            </button>
-                            
-                            <button className="corporate-nav-button-right">
-                                <RightArrow className="corporate-game-nav"/>
-                            </button>
-                            <div className="corporate-ball-game-content">
-                            <span className="corporate-ball-game-title">Corporate Ball Game</span>
-                            <div className="corporate-ball-game-subtitle-container">
-                                <span className="corporate-ball-game-subtitle">Season 2</span>
-                            </div>
-                            </div>
-                        </div> */}
                     </div>
-
-
-
-
-
                 </div>
                 <div className="initiatives-section">
                     <img src={initiative} alt="image1"/>
@@ -97,7 +73,9 @@ export default function MainBody(){
                 </div>
                 <div className="match-section">
                     <div className="match-center-container">
+                        <div>
                         <LeftArrow className="match-center-nav"/>
+                        </div>
                         <div className="match-center-content">
                             <div className="match-center-header">
                                 <p className="match-center-title">MATCH CENTER</p>
@@ -135,8 +113,11 @@ export default function MainBody(){
                                     <ViewAll/>
                                 </div>
                             </div>
+                            
                         </div>
+                        <div>
                         <RightArrow className="match-center-nav"/>
+                        </div>
                     </div>
 
                 </div>
