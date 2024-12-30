@@ -33,39 +33,30 @@ export default function MainBody(){
                     
                   
                     <div className="corporate-game-section">
-                        {/* <img className="bg-stadium-img" src={stadium} alt="stadium img"/> */}
-
-                        <div className="coporate-game-logo">
-                            <img className="corporate-ball-game-img" src={ballgame} alt="ballgame background" />
-
-                        </div>
-                        <div className="corporate-game-container">
                             <div>
                                 <button className="corporate-nav-button-left">
                                     <LeftArrow className="corporate-game-nav"/>
                                 </button>
                             </div>
-                            <div className="corporate-game-text">
-                                <div className="corporate-ball-game-content">
-                                    <span className="corporate-ball-game-title">Corporate Ball Game</span>
-                                </div>
-                                <div className="corporate-ball-game-subtitle-container">
-                                    <span className="corporate-ball-game-subtitle">Season 2</span>
-                                </div>
+                            <div className="corporate-game-container">
+                                    <img className="corporate-ball-game-img" src={ballgame} alt="ballgame background" />
+                                    <div className="corporate-ball-game-content">
+                                        <span className="corporate-ball-game-title">Corporate Ball Game</span>
+                                        <span className="corporate-ball-game-subtitle">Season 2</span>
+                                    </div> 
                             </div>
                             <div>
                                 <button className="corporate-nav-button-right">
                                     <RightArrow className="corporate-game-nav"/>
                                 </button>
                             </div>
-                        </div>
                     </div>
                 </div>
                 <div className="initiatives-section">
                     <img src={initiative} alt="image1"/>
                     <div className="initiavtive-content">
                         <div className="d1"><p className="p1">INITIATIVES</p></div>
-                        <p className="p2">FOOTBALL TRAINING CAMP IN COLLEGES/UNIVERSITIES</p>
+                        <p className="p2">FOOTBALL TRAINING CAMP IN COLLEGES/ UNIVERSITIES</p>
                         <p className="p3">Our goal is to provide a comprehensive football development program led by licensed coaches, aimed at refining skills and fostering a competitive spirit on the field. Our commitment extends beyond training sessions to biweekly fitness programs, ensuring holistic player development. </p>
                         <ViewAll/>
                     </div>
