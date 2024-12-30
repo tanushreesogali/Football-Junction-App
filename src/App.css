@@ -6,7 +6,7 @@
 }
 html, body {
   width: 100%;
-  /* overflow-x: hidden;  */
+  
 }
 
 * {
@@ -24,20 +24,21 @@ body {
 .container-align{
   display: flex;
   width: 100%;
-  /* max-width: var(--width-1440, 1440px); */
   align-items: center;
   justify-content: center;
   gap: 16px;
   width: 70%;
-  padding:0 15%;
+  /* padding:0 15%; */
   flex-direction: column;
+  margin:auto;
+  width:70%;
 }
 
 .header-css{
   display: flex;
   padding: 24px 0px 16px 0px;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   gap: 4px;
 }
 
@@ -67,13 +68,9 @@ body {
 .header2-css{
   display: none;
 }
-.home-css{
-  width: 100%;
-}
 
 .footer-class{
   display: flex;
-
   width:100%;
 }
 
@@ -102,7 +99,6 @@ body {
 .newsletter-content{
   display: flex;
   width:53%;
-  max-width: 741px;
   flex-direction: column;
   align-items: flex-start;
   gap: 6px;
@@ -128,7 +124,6 @@ body {
 .newsletter-content button{
   display: flex;
   width: 27.7%;
-  max-width: 205px;
   height: 39px;
   flex-direction: column;
   justify-content: center;
@@ -147,7 +142,6 @@ body {
 .footer-links-container{
   display: flex;
   width: 93.61%;
-  max-width: 1348px;
   justify-content: space-between;
   align-items: center;
 }
@@ -155,7 +149,6 @@ body {
 .footer-brands{
   display: flex;
   width:15.06%;
-  max-width: 203px;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
@@ -174,7 +167,6 @@ body {
 .footer-about{
   display: flex;
   width: 25%;
-  max-width: 330px;
   flex-direction: column;
   align-items: center;
   gap: 11px;
@@ -184,7 +176,6 @@ body {
 .footer-about img{
   height: auto;
   width:39.7%;
-  max-width: 131px;
 }
 
 .footer-about p{
@@ -196,7 +187,6 @@ body {
 .footer-legal{
   display: flex;
   width:22%;
-  max-width: 302px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
@@ -225,7 +215,6 @@ body {
 .hero-section-1 {
   position: relative; 
   width: 59.26%;
-  max-width: 640px;
   height: 380px;
   flex-shrink: 0;
   border-radius: 24px;
@@ -242,7 +231,7 @@ body {
   font-size: 32px;
   font-weight: 700;
   line-height: 100%; 
-  max-width: calc(640px - 31px - 309px); 
+  /* max-width: calc(640px - 31px - 309px);  */
 }
 
 .hero-section-1 .p2 {
@@ -253,7 +242,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
-  max-width: calc(640px - 31px - 309px); 
+  /* max-width: calc(640px - 31px - 309px);  */
 }
 
 
@@ -416,7 +405,7 @@ body {
   align-self: stretch;
   color: var(--color-black-solid, #000);
   font-family: 'Antenna';
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -428,11 +417,14 @@ body {
 /* MATCH SECTION */
 .match-section{
   display: flex;
-  height: 380px;
-  width:100%;
+  height: auto;
+  padding: 10px 0;
+  /* height: 380px; */
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
+  margin:auto;
+  width:100%;
   gap: 8px;
   border-radius: 24px;
   background: var(--Bg-Color, #FFFDF7);
@@ -443,7 +435,6 @@ body {
   align-items: center;
   gap: 40px;
   width: 65.%;
-  max-width: 660.46px;
 }
 
 .match-center-nav{
@@ -457,7 +448,6 @@ body {
 .match-center-content {
   display: flex;
   width:100%;
-  max-width: 510px;
   flex-direction: column;
   align-items: center;
   gap: 16px;
@@ -465,7 +455,7 @@ body {
 
 .match-center-header {
   display: flex;
-  padding: 16px;
+  /* padding: 16px; */
   justify-content: center;
   align-items: center;
   gap: 8px;
@@ -613,7 +603,7 @@ body {
   width: 100%;
   padding: 32px 0px;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   gap: 16px;
   border-radius: 24px;
   background: var(--Bg-Color, #FFFDF7);
@@ -820,40 +810,43 @@ body {
 }
 
 /* Icon size */
-.icon {
+/* .icon {
   font-size: 24px;
-}
+} */
 
 
 
 
 /* MOBILE VIEW STARTING AT 600px html  */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .initiatives-section, .socials-column, .match-section img, .header-css{
     display: none;
   }
   .header2-css{
-    /* display: flex;
-    height: 52px;
-    align-items: center;
-    gap: 40px; */
     display: flex;
     width: 100%;
-    padding: 24px 0px 16px 0px;
+    padding: 24px 0px 16px 0px; 
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 35px;
     margin: 0 auto;
-    
     max-width: 526.02px;
-    /* height: 52px; */
   }
+  .header2-css p{
+    font-size: 32px;
+    font-weight: 700;
+  }
+
   .hero-section, .news-section-container{
     flex-direction: column;
   }
   .container-align{
     width: 87.67%;
-    max-width: 526.02px;
+    gap:16px;
+  }
+  .main-css{
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .main-css, .hero-section-1, .corporate-game-section{
     width: 100%;
@@ -863,59 +856,53 @@ body {
   }
 
   .footer-links-container{
-    width: 74.51%;
-    max-width: 447.06px;
+    width: 91.51%;
+    gap: auto;
   }
 
   .footer-brands{
-    width: 15.06%;
-    max-width: 90.36px;
+    width: 16.1%;
     line-height: 140%;
     gap: 2.167px;
   }
 
   .footer-about{
     width: 24.55%;
-    max-width: 147.3px;
     line-height: 120%;
     gap: 2.979px;
   }
   .footer-about p, .footer-brands p{
-    font-size: 4.333px;
+    font-size: 7.99px;
   }
 
   .footer-about img{
     width:39.58%;
-    max-width: 237.48px;
     height: auto;
   }
   .footer-legal{
-    width: 22.39%;
-    max-width: 134.34px;
-    font-size: 5.417px;
-    gap: 4.333px;
+    width: 27.7%;
+    font-size: 9.42px;
+    gap: 5px;
+    text-align: right;
     
   }
 
   .footer-class{
     width: 100%;
-    max-width:600px;
   }
   .footer-css{
     width: 100%;
-    max-width:600px;
 
   }
   .newsletter-content {
-    max-width: 260.92px;
     width: 44.82%;
     left: 5%; 
-    top: 30px; 
+    top: 35px; 
     gap: 5.167px;
   }
 
   .newsletter-content p {
-    font-size: 12.067px; 
+    font-size: 12.9px; 
     line-height: 120%; 
     height: auto; 
     text-align: left; 
@@ -923,16 +910,88 @@ body {
 
   .newsletter-content button {
     width: 20.76%;
-    max-width: 140.56px; 
-    /* height: auto; */
     height: 14.563px; 
     font-size: 7.333px;
     line-height: 120%;
-    border-radius: 15px; /* Adjust border radius */
+    border-radius: 15px; 
   }  
 
   .match-center-container{
     width: 100%;
+    gap: 20px;
+  }
+
+  .match-center-title, .press-corner-title{
+    font-size: 24px;
+  }
+  .news-item-title{
+    font-size: 16px;
+  }
+  .news-item-viewall-text{
+    font-size: 12px;
+  }
+  .match-section, .press-corner-section{
+    padding-left:5px;
+    padding-right: 5px;;
+  }
+
+  .icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1px;
+    width: 100%;
+    max-width: inherit;;
+  
+  }
+  
+  .icon-wrapper {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 15px;
+    /* width: 15.375px;
+    height: 15px; */
+    width: 8.125px;
+    height: 8.125px;
+    /* border-radius: 4.063px; */
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+  }
+  
+  /* Hover effects */
+  .icon-wrapper:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .facebook {
+    background: #3B5998;
+    padding: 2.031px 1.929px 2.032px 2.032px;
+  }
+  
+  .twitter {
+    background-color: #1da1f2;
+    padding: 2.031px 1.93px 2.032px 2.031px;
+  }
+  
+  .youtube {
+    background: #CD201F;
+    padding: 2.031px 1.669px 2.032px 1.776px;
+  }
+  
+  .instagram {
+    background: #FF17BD;
+    padding: 2.031px 2.187px 2.032px 2.287px;
+  }
+  
+  .linkedin {
+    background: #0077B5;
+    padding: 2.031px 2.188px 2.032px 2.286px;
   }
   
 }
