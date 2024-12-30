@@ -341,7 +341,7 @@ body {
 /* INITIATIVES SECTION */
 .initiatives-section{
   display: flex;
-  max-width:100%;
+  width:100%;
   height: 380px;
   padding-right: 12px;
   align-items: flex-start;
@@ -411,6 +411,7 @@ body {
   line-height: normal;
   text-align: left;
   margin:0;
+  width: 100%;
 }
 
 
@@ -433,8 +434,9 @@ body {
 .match-center-container{
   display: flex;
   align-items: center;
+  justify-content: center; 
   gap: 40px;
-  width: 65.%;
+  width: 98%;
 }
 
 .match-center-nav{
@@ -447,7 +449,7 @@ body {
 
 .match-center-content {
   display: flex;
-  width:100%;
+  width:70%;
   flex-direction: column;
   align-items: center;
   gap: 16px;
@@ -809,12 +811,6 @@ body {
   padding: 7.5px 8.078px 7.5px 8.44px;
 }
 
-/* Icon size */
-/* .icon {
-  font-size: 24px;
-} */
-
-
 
 
 /* MOBILE VIEW STARTING AT 600px html  */
@@ -840,8 +836,12 @@ body {
   .hero-section, .news-section-container{
     flex-direction: column;
   }
+
+  .news-item-container{
+    width:95%;
+  }
   .container-align{
-    width: 87.67%;
+    width: 88.67%;
     gap:16px;
   }
   .main-css{
@@ -930,10 +930,10 @@ body {
   .news-item-viewall-text{
     font-size: 12px;
   }
-  .match-section, .press-corner-section{
+  /* .match-section, .press-corner-section{
     padding-left:5px;
     padding-right: 5px;;
-  }
+  } */
 
   .icon-container {
     display: flex;
