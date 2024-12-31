@@ -39,7 +39,7 @@ body {
   gap: 4px;
 }
 
-.header-css p{
+.header-css a{
   display: flex;
   padding: 8px;
   justify-content: center;
@@ -48,6 +48,9 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 120%; 
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .header-css .current-page{
@@ -205,13 +208,13 @@ body {
 .hero-section{
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 11.5px;
   align-self: stretch;
 }
 
 .hero-section-1 {
   display: flex;
-  width: 59.26%;
+  width: 55.26%;
   height: 380px;
   flex-shrink: 0;
   border-radius: 24px;
@@ -248,7 +251,8 @@ body {
 .corporate-game-section {
   background: url('./Components/images/empty stadium.jpg') lightgray 50% / cover no-repeat;
   background-color: #000;
-  width: 38.52%;
+  /* width: 38.52%; */
+  width: 42.52%;
   height: 380px;
   border-radius: 24px;
   display: flex;
@@ -602,6 +606,13 @@ body {
 }
 
 /* PRESS CORNER */
+.press-corner-page{
+  display: flex;
+  padding: 40px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
 .press-corner-section{
   display: flex;
   width: 100%;
@@ -617,6 +628,7 @@ body {
   align-items: center;
   gap: 9.752px;
   align-self: stretch;
+  cursor: pointer;
 
 }
 .press-corner-title{
@@ -624,6 +636,178 @@ body {
   font-weight: 700;
   line-height: 120%;
 }
+
+
+/* NEWS SECTION */
+.news-column-frame{
+  display: flex;
+  flex-direction: row;
+  gap:24px;
+  height: auto;
+  width:100%;
+  align-items: center;
+  justify-content: center;
+}
+.news-more-section{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 26px;
+  width: 43%;
+  height: inherit;
+}
+
+.breaking-news-section{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 17px;
+  width: 39%;
+  border-radius: 24px;
+  background: var(--Bg-Color, #FFFDF7);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 24px 16px 16px 16px;
+  height: auto;
+}
+
+.breaking-news-title{
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.breaking-news-container{
+  display: flex;
+  padding-bottom: 4px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  border-bottom: 1px solid var(--Text-Primary, #1A1A1A);
+  text-align: left;
+}
+
+.brk-news-time{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.4px;
+}
+
+.brk-news-content{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+
+.video-news-section{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 24px;
+}
+
+.video-news-container{
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: var(--Bg-Color, #FFFDF7);
+  text-align: left;
+}
+.video-news-img{
+  /* border-radius: 24px; */
+  border-radius: 12px 12px 0px 0px;
+  width: 100%;
+}
+
+.video-news-content{
+  padding-left: 3%;
+  padding-right: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  align-self: stretch;
+  
+}
+.video-news-background{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0px 18px;
+  align-self: stretch;
+  flex-wrap: wrap;
+  color: var(--Text-Tertiary, #9C9C9C);
+  font-family: Antenna;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.video-news-title{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.video-news-subtitle{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 140%;
+
+}
+
+.video-news-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.video-news-footer{
+  padding-left: 3%;
+  padding-right: 3%;
+  width: 98%;
+  font-weight: 700;
+  font-size: 12px;
+  /* gap:35%; */
+
+}
+.news-full-story{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.video-views{
+  display: flex;
+  align-items: flex-start;
+  gap: 2%;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  /* width: 60%; */
+  
+
+}
+.time-section{
+  display: flex;
+  gap: 1%;
+  width: auto;
+
+}
+.comment-section{
+  display: flex;
+  gap: 1%;
+}
+
+
+
+
 .news-section{
   display: flex;
   flex-direction: column;
@@ -1031,6 +1215,6 @@ body {
   .corporate-ball-game-img{
     width: 250%;
   }
-  
+
   
 }
