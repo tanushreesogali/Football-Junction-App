@@ -8,7 +8,7 @@ import Footer from './Footer';
 import videoimg from "./images/video-icon.png"
 // components
 import RightArrow from "./RightArrow";
-import LeftArrow from "./LeftArrow";
+//import LeftArrow from "./LeftArrow";
 import ViewAll from './ViewAll';
 
 
