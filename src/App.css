@@ -226,6 +226,7 @@ body {
   flex-direction: column;
   gap:3px;
   width: 97%;
+  padding-left: 2%;
   color: var(--Text-Secondary, #F4F4F4);
 }
 
@@ -860,17 +861,20 @@ body {
 
   .footer-links-container{
     width: 91.51%;
-    gap: auto;
+    gap:4%;
+    
   }
 
   .footer-brands{
-    width: 16.1%;
+    /* width: 18.5%; */
+    width: 22.4%;
     line-height: 140%;
     gap: 2.167px;
   }
 
   .footer-about{
-    width: 24.55%;
+    /* width: 32%; */
+    width: 35.9%;
     line-height: 120%;
     gap: 2.979px;
   }
@@ -883,7 +887,8 @@ body {
     height: auto;
   }
   .footer-legal{
-    width: 27.7%;
+    /* width: 27.7%; */
+    width: 31.6%;
     font-size: 9.42px;
     gap: 5px;
     text-align: right;
@@ -1026,5 +1031,6 @@ body {
   .corporate-ball-game-img{
     width: 250%;
   }
+  
   
 }
