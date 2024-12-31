@@ -741,8 +741,10 @@ body {
   font-family: 'Antenna', sans-serif;
   color: var(--Text-Secondary, #F4F4F4);
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 120%;
+  font-size: 16px;
+  
 }
 .view-all-icon{
   display: flex;
@@ -1002,6 +1004,11 @@ body {
   .linkedin {
     background: #0077B5;
     padding: 2.031px 2.188px 2.032px 2.286px;
+  }
+
+  .view-all-text{
+    font-size: 13.33px;
+    font-weight: 700;
   }
   
 }
