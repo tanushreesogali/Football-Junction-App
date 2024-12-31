@@ -24,7 +24,7 @@ export default function Footer(){
             </div>
             <div className="footer-links-container">
                 <div className="footer-brands">
-                    {/* <div>Links column</div> */}
+                    
                     <div className="icon-container">
                         <div className="icon-wrapper facebook">
                             <FontAwesomeIcon icon={faFacebook} className="icon" />
@@ -49,14 +49,15 @@ export default function Footer(){
                     <p>Transforming Lives Through Football! Football Junction Foundation, a registered Section 8 non-profit, is on a mission to revolutionize football in our nation.</p>
                 </div>
                 <div className="footer-legal">
-                    {/* Links */}
+                    
                     <p>About Us</p>   
                     <p>Terms & Conditions</p>
                     <p>Privacy Policy</p>
-                    {/* Links */}
+                    
                     <p>Powered by InfluCon Digitals</p>
-                </div>
+                </div> 
             </div>
+           
         </div>
     )
 }

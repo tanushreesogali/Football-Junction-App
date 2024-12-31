@@ -5,15 +5,15 @@
   font-weight: 500; 
   font-style: normal;
 }
-/* 
-@font-face {
+
+/* @font-face {
   font-family: 'Antenna';
   src: url('./font/Antenna-Medium.otf') format('opentype');
   font-weight: 400; 
   font-style: normal;
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: 'Antenna';
   src: url('./font/Antenna-Medium.otf') format('opentype');
   font-weight: 700; 

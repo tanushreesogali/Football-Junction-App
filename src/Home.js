@@ -9,7 +9,7 @@ export default function Home() {
     const sidebar = document.getElementById('sidebar');
 
     if (!footer || !sidebar) return;
-    const isMobileWidth = () => window.innerWidth <= 600;
+    const isMobileWidth = () => window.innerWidth <= 650;
     const updateSidebarVisibility = (shouldHide) => {
       sidebar.style.display = shouldHide || isMobileWidth() ? 'none' : 'flex';
     };
@@ -34,31 +34,12 @@ export default function Home() {
       observer.disconnect();
       window.removeEventListener('resize', updateSidebarVisibility);
     };
-
-    // const observer = new IntersectionObserver(
-    //   entries => {
-    //     entries.forEach(entry => {
-    //       if (entry.intersectionRatio >= 0.6) {
-    //         sidebar.style.display = 'none';
-    //       } else {
-    //         sidebar.style.display = 'flex';
-    //       }
-    //     });
-    //   },
-    //   { threshold: 0.6 } 
-    // );
-
-    // observer.observe(footer);
-
-    // return () => {
-    //   observer.disconnect();
-    // };
   }, []);
 
   return (
-    <div className="home-css">
+    <div>
       <MainBody />
-      <Footer id="footer" className="footer-class" />          
+      <Footer id="footer" className="footer-class" />
     </div>
   );
 }
