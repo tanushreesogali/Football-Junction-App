@@ -1,10 +1,12 @@
+// components
 import Header from "./Header";
 import Socials from "./Socials";
 import ViewAll from "./ViewAll";
 import RightArrow from "./RightArrow";
 import LeftArrow from "./LeftArrow";
+
+// images
 import initiative from "./images/close-up-athlete-playing-soccer 2.png"
-// import stadium from "./images/empty stadium.jpg";
 import ballgame from "./images/Corporate Ball Game Image.png";
 import team1 from "./images/Match Center Team Image.png";
 import team2 from "./images/Match Center Team Image (1).png";
@@ -13,15 +15,24 @@ import teamicon1 from "./images/Match Center Icon.png";
 import teamicon2 from "./images/Match Center Icon (1).png";
 import teamicon3 from "./images/Match Center Icon (2).png";
 import teamicon4 from "./images/Match Center Icon (3).png";
+
+// navigation
+import { useNavigate } from "react-router-dom";
 import React from "react";
 
 export default function MainBody(){
+    const navigate = useNavigate();
+
+    const handlePressCornerClick = () => {
+        navigate("/press-corner");
+    };
     
     return(
         <div className="container-align">
             <Header/>
             <Socials/>
             <div className="main-css">
+                {/* HERO AND CORPORATE GAME DIV */}
                 <div className="hero-section">
                     <div className="hero-section-1">
                         {/* image */}
@@ -52,6 +63,8 @@ export default function MainBody(){
                             </div>
                     </div>
                 </div>
+
+                {/* INITIATIVES DIV */}
                 <div className="initiatives-section">
                     <img src={initiative} alt="image1"/>
                     <div className="initiavtive-content">
@@ -62,6 +75,8 @@ export default function MainBody(){
                     </div>
 
                 </div>
+
+                {/* MATCH CENTER */}
                 <div className="match-section">
                     <div className="match-center-container">
                         <div>
@@ -110,10 +125,11 @@ export default function MainBody(){
                         <RightArrow className="match-center-nav"/>
                         </div>
                     </div>
-
                 </div>
-                <div className="press-corner-section">
-                    <div className="press-corner-content">
+
+                {/* PRESS CORNER SECTION */}
+                <div className="press-corner-section" >
+                    <div className="press-corner-content" onClick={handlePressCornerClick}>
                         <p className="press-corner-title">PRESS CORNER</p>
                         <ViewAll/>
                     </div>
@@ -135,7 +151,6 @@ export default function MainBody(){
                                     </div>
                                 </div>
                             </div>
-
                             <div className="news-item-container">
                                 <img className="news-item-image" alt="news-item-img"/>
                                 <div className="news-item-content">
@@ -228,12 +243,8 @@ export default function MainBody(){
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
-
-                </div>
-
-               
+                </div> 
             </div>
         </div>
     )
