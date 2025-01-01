@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
 import Header from "./Header";
 import Socials from "./Socials";
 import Footer from './Footer';
@@ -8,7 +9,7 @@ import Footer from './Footer';
 import videoimg from "./images/video-icon.png"
 // components
 import RightArrow from "./RightArrow";
-// import LeftArrow from "./LeftArrow";
+import LeftArrow from "./LeftArrow";
 import ViewAll from './ViewAll';
 
 
@@ -18,6 +19,11 @@ import { ReactComponent as CommentIncon } from './icons/comment-icon.svg';
 
 
 export default function PressCorner() {
+    const navigate = useNavigate();
+    const handleClick = () => {
+        console.log("Button clicked");
+        navigate("/");
+    };
     useEffect(() => {
         const footer = document.getElementById('footer');
         const sidebar = document.getElementById('sidebar');
@@ -52,6 +58,9 @@ export default function PressCorner() {
   return (
     <div>
     <div className="container-align">
+        <button className="back-button" type="button" onClick={handleClick} id="home-button">
+            <LeftArrow className="back-button-icon"/>
+        </button>
         <Header/>
         <Socials/>
         <div className="press-corner-page">
