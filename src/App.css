@@ -14,6 +14,8 @@ html, body {
   padding: 0;
 }
 
+
+
 body {
   font-family: 'Antenna', sans-serif;
   font-style: normal;
@@ -579,7 +581,7 @@ body {
   position: fixed;
   top: 20%;
   right: 20px;
-  z-index: 10;
+  z-index: -10;
 }
 
 .social-icon-container {
@@ -606,6 +608,24 @@ body {
 }
 
 /* PRESS CORNER */
+
+.back-button{
+  display: flex;
+  position: fixed;
+  top: 6%;
+  left: 3%;
+  z-index: 10;
+  box-sizing: border-box;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.back-button-icon{
+  height: 35px;
+  width: 35px;
+}
+
 .press-corner-page{
   display: flex;
   padding: 40px 0px;
@@ -930,6 +950,7 @@ body {
   gap: 8px;
   background: var(--Forms-Selected-Bg, #272727);
   border: none;
+  cursor: pointer;
 
 }
 .view-all-text{
@@ -1235,7 +1256,7 @@ body {
 
 }
 
-@media (min-width: 650px) and (max-width: 880px) {
+@media (min-width: 651px) and (max-width: 880px) {
   .corporate-game-section{
     gap:0;
   }
@@ -1248,6 +1269,20 @@ body {
   .corporate-ball-game-img{
     width: 250%;
   }
+}
 
-  
+@media (min-width: 650px) and (max-width: 700px){
+  .newsletter-content p{
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 824px){
+  .news-section-container:nth-child(4){
+    display: none;
+  }
+  .news-more-section{
+    justify-content: space-between;
+    /* gap: 0; */
+  }
 }
