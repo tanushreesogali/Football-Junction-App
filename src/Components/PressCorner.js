@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from "./Header";
 import Socials from "./Socials";
 import Footer from './Footer';
@@ -8,7 +8,7 @@ import Footer from './Footer';
 import videoimg from "./images/video-icon.png"
 // components
 import RightArrow from "./RightArrow";
-//import LeftArrow from "./LeftArrow";
+// import LeftArrow from "./LeftArrow";
 import ViewAll from './ViewAll';
 
 
@@ -18,7 +18,37 @@ import { ReactComponent as CommentIncon } from './icons/comment-icon.svg';
 
 
 export default function PressCorner() {
- 
+    useEffect(() => {
+        const footer = document.getElementById('footer');
+        const sidebar = document.getElementById('sidebar');
+    
+        if (!footer || !sidebar) return;
+        const isMobileWidth = () => window.innerWidth <= 650;
+        const updateSidebarVisibility = (shouldHide) => {
+          sidebar.style.display = shouldHide || isMobileWidth() ? 'none' : 'flex';
+        };
+    
+        const observer = new IntersectionObserver(
+          entries => {
+            entries.forEach(entry => {
+              updateSidebarVisibility(entry.intersectionRatio >= 0.6);
+            });
+          },
+          { threshold: 0.6 }
+        );
+        
+        observer.observe(footer);
+        
+        window.addEventListener('resize', () => {
+          updateSidebarVisibility(false);
+        });
+        updateSidebarVisibility(false);
+        
+        return () => {
+          observer.disconnect();
+          window.removeEventListener('resize', updateSidebarVisibility);
+        };
+      }, []);
   return (
     <div>
     <div className="container-align">
@@ -371,9 +401,12 @@ export default function PressCorner() {
                        
         </div>
     </div>
-    <Footer/>
+    <Footer id="footer" className="footer-class"/>
     </div>
   );
 }
+
+
+
 
 
