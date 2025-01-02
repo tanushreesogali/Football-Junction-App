@@ -737,10 +737,32 @@ body {
   background: var(--Bg-Color, #FFFDF7);
   text-align: left;
 }
+
+.video-news-thumbnail{
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+
+}
 .video-news-img{
-  /* border-radius: 24px; */
   border-radius: 12px 12px 0px 0px;
   width: 100%;
+  display: block;
+
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -50%);
 }
 
 .video-news-content{
@@ -816,24 +838,81 @@ body {
 .time-section{
   display: flex;
   gap: 1%;
-  width: auto;
-  
-  flex-wrap: nowrap;
-}
-.time-section p{
-  display: flex;
-  flex-wrap: nowrap;
-  width: auto;
-
+  width: 100px;
 }
 .comment-section{
   display: flex;
   gap: 1%;
-  flex-wrap: nowrap;
 }
 
+/* Press News Page */
+.press-news-content{
+  text-align: left;
 
+}
+.press-news-page{
+  display: flex;
+  width: 100%;
+  padding: 32px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  border-radius: 24px;
+  background: var(--Bg-Color, #FFFDF7);
+}
 
+.press-news-main{
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: 24px;
+    background: var(--Bg-Color, #FFFDF7);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.press-news-background{
+  display: flex;
+  height: 18px;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 0px 18px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+.press-news-title{
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%; 
+
+}
+.press-news-subtitle{
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+
+}
+.press-news-details{
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 140%; 
+
+}
+.press-news-writeup{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+
+}
 
 .news-section{
   display: flex;
@@ -911,6 +990,7 @@ body {
   gap: 2px;
   border: none;
   background-color: #FFFDF7;
+  cursor: pointer;
 
 }
 .news-item-viewall-icon{
@@ -921,6 +1001,8 @@ body {
   width: 13.5px;
   height: 13.5px;
   border-radius: 300px;
+  cursor: pointer;
+  
 
 }
 .news-item-viewall-text{
@@ -928,6 +1010,7 @@ body {
   font-weight: 700;
   line-height: 140%; 
   text-align: left;
+  cursor: pointer;
 }
 
 
