@@ -1,9 +1,11 @@
-import React, { useEffect } from 'react';
-import { useNavigate } from "react-router-dom";
+import React from 'react';
 import Header from "./Header";
 import Socials from "./Socials";
 import Footer from './Footer';
+import { useNavigate } from "react-router-dom";
 
+// hooks
+import useVisibility from '../Hooks/useVisibility';
 
 // images
 import videoimg from "./images/video-icon.png"
@@ -16,51 +18,28 @@ import ViewAll from './ViewAll';
 // SVGS
 import { ReactComponent as TimeIcon } from './icons/time-icon.svg';
 import { ReactComponent as CommentIncon } from './icons/comment-icon.svg';
+import { ReactComponent as CircleIcon } from "./icons/Circle-icon.svg";
+import { ReactComponent as PlayIcon } from "./icons/Play-icon.svg";
 
 
 export default function PressCorner() {
+
     const navigate = useNavigate();
-    const handleClick = () => {
+    const handleBackClick = () => {
         console.log("Button clicked");
         navigate("/");
     };
-    useEffect(() => {
-        const footer = document.getElementById('footer');
-        const sidebar = document.getElementById('sidebar');
-    
-        if (!footer || !sidebar) return;
-        const isMobileWidth = () => window.innerWidth <= 650;
-        const updateSidebarVisibility = (shouldHide) => {
-          sidebar.style.display = shouldHide || isMobileWidth() ? 'none' : 'flex';
-        };
-    
-        const observer = new IntersectionObserver(
-          entries => {
-            entries.forEach(entry => {
-              updateSidebarVisibility(entry.intersectionRatio >= 0.6);
-            });
-          },
-          { threshold: 0.6 }
-        );
-        
-        observer.observe(footer);
-        
-        window.addEventListener('resize', () => {
-          updateSidebarVisibility(false);
-        });
-        updateSidebarVisibility(false);
-        
-        return () => {
-          observer.disconnect();
-          window.removeEventListener('resize', updateSidebarVisibility);
-        };
-      }, []);
+    const handleNewsClick =() =>{
+        navigate("/press-news");
+    }
+    useVisibility();
   return (
     <div>
     <div className="container-align">
-        <button className="back-button" type="button" onClick={handleClick} id="home-button">
+        <button className="back-button" type="button" onClick={handleBackClick} id="home-button">
             <LeftArrow className="back-button-icon"/>
         </button>
+
         <Header/>
         <Socials/>
         <div className="press-corner-page">
@@ -80,7 +59,7 @@ export default function PressCorner() {
                             </p>
                             <div className="news-item-text-container">
                                 <div className="news-item-viewall-container">
-                                    <button className="news-item-viewall-button">
+                                    <button className="news-item-viewall-button" onClick={handleNewsClick}>
                                         <span className="news-item-viewall-text">FULL STORY</span>
                                         <RightArrow className="news-item-viewall-icon" />
                                     </button>
@@ -97,45 +76,7 @@ export default function PressCorner() {
                             </p>
                             <div className="news-item-text-container">
                                 <div className="news-item-viewall-container">
-                                    <button className="news-item-viewall-button">
-                                        <span className="news-item-viewall-text">FULL STORY</span>
-                                        <RightArrow className="news-item-viewall-icon" />
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="news-section">
-                <div className="news-section-container">
-                    <div className="news-item-container">
-                        <img className="news-item-image" alt="news-item-img" />
-                        <div className="news-item-content">
-                            <p className="news-item-title">
-                                India begin AFC Asian cup qualifiers journey Against Cambodia
-                            </p>
-                            <div className="news-item-text-container">
-                                <div className="news-item-viewall-container">
-                                    <button className="news-item-viewall-button">
-                                        <span className="news-item-viewall-text">FULL STORY</span>
-                                        <RightArrow className="news-item-viewall-icon" />
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="news-item-container">
-                        <img className="news-item-image" alt="news-item-img" />
-                        <div className="news-item-content">
-                            <p className="news-item-title">
-                                India begin AFC Asian cup qualifiers journey Against Cambodia
-                            </p>
-                            <div className="news-item-text-container">
-                                <div className="news-item-viewall-container">
-                                    <button className="news-item-viewall-button">
+                                    <button className="news-item-viewall-button" onClick={handleNewsClick}>
                                         <span className="news-item-viewall-text">FULL STORY</span>
                                         <RightArrow className="news-item-viewall-icon" />
                                     </button>
@@ -156,7 +97,7 @@ export default function PressCorner() {
                             </p>
                             <div className="news-item-text-container">
                                 <div className="news-item-viewall-container">
-                                    <button className="news-item-viewall-button">
+                                    <button className="news-item-viewall-button" onClick={handleNewsClick}>
                                         <span className="news-item-viewall-text">FULL STORY</span>
                                         <RightArrow className="news-item-viewall-icon" />
                                     </button>
@@ -173,7 +114,45 @@ export default function PressCorner() {
                             </p>
                             <div className="news-item-text-container">
                                 <div className="news-item-viewall-container">
-                                    <button className="news-item-viewall-button">
+                                    <button className="news-item-viewall-button" onClick={handleNewsClick}>
+                                        <span className="news-item-viewall-text">FULL STORY</span>
+                                        <RightArrow className="news-item-viewall-icon" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="news-section">
+                <div className="news-section-container">
+                    <div className="news-item-container">
+                        <img className="news-item-image" alt="news-item-img" />
+                        <div className="news-item-content">
+                            <p className="news-item-title">
+                                India begin AFC Asian cup qualifiers journey Against Cambodia
+                            </p>
+                            <div className="news-item-text-container">
+                                <div className="news-item-viewall-container">
+                                    <button className="news-item-viewall-button" onClick={handleNewsClick}>
+                                        <span className="news-item-viewall-text">FULL STORY</span>
+                                        <RightArrow className="news-item-viewall-icon" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="news-item-container">
+                        <img className="news-item-image" alt="news-item-img" />
+                        <div className="news-item-content">
+                            <p className="news-item-title">
+                                India begin AFC Asian cup qualifiers journey Against Cambodia
+                            </p>
+                            <div className="news-item-text-container">
+                                <div className="news-item-viewall-container">
+                                    <button className="news-item-viewall-button" onClick={handleNewsClick}>
                                         <span className="news-item-viewall-text">FULL STORY</span>
                                         <RightArrow className="news-item-viewall-icon" />
                                     </button>
@@ -198,7 +177,7 @@ export default function PressCorner() {
                                 </p>
                                 <div className="news-item-text-container">
                                     <div className="news-item-viewall-container">
-                                        <button className="news-item-viewall-button">
+                                        <button className="news-item-viewall-button" onClick={handleNewsClick}>
                                             <span className="news-item-viewall-text">FULL STORY</span>
                                             <RightArrow className="news-item-viewall-icon" />
                                         </button>
@@ -217,7 +196,7 @@ export default function PressCorner() {
                                 </p>
                                 <div className="news-item-text-container">
                                     <div className="news-item-viewall-container">
-                                        <button className="news-item-viewall-button">
+                                        <button className="news-item-viewall-button" onClick={handleNewsClick}>
                                             <span className="news-item-viewall-text">FULL STORY</span>
                                             <RightArrow className="news-item-viewall-icon" />
                                         </button>
@@ -236,7 +215,7 @@ export default function PressCorner() {
                                 </p>
                                 <div className="news-item-text-container">
                                     <div className="news-item-viewall-container">
-                                        <button className="news-item-viewall-button">
+                                        <button className="news-item-viewall-button" onClick={handleNewsClick}>
                                             <span className="news-item-viewall-text">FULL STORY</span>
                                             <RightArrow className="news-item-viewall-icon" />
                                         </button>
@@ -255,7 +234,7 @@ export default function PressCorner() {
                                 </p>
                                 <div className="news-item-text-container">
                                     <div className="news-item-viewall-container">
-                                        <button className="news-item-viewall-button">
+                                        <button className="news-item-viewall-button" onClick={handleNewsClick}>
                                             <span className="news-item-viewall-text">FULL STORY</span>
                                             <RightArrow className="news-item-viewall-icon" />
                                         </button>
@@ -306,6 +285,8 @@ export default function PressCorner() {
                 <div className='video-news-container'>
                     <div className='video-news-thumbnail'>
                         <img src={videoimg} className='video-news-img' alt='video-news-img'/>
+                        <CircleIcon className='circle'/>
+                        <PlayIcon className='play'/>
                     </div>
 
                     <div className='video-news-content'>
@@ -341,6 +322,8 @@ export default function PressCorner() {
                 <div className='video-news-container'>
                     <div className='video-news-thumbnail'>
                         <img src={videoimg} className='video-news-img' alt='video-news-img'/>
+                        <CircleIcon className='circle'/>
+                        <PlayIcon className='play'/>
                     </div>
 
                     <div className='video-news-content'>
@@ -376,6 +359,8 @@ export default function PressCorner() {
                 <div className='video-news-container'>
                     <div className='video-news-thumbnail'>
                         <img src={videoimg} className='video-news-img' alt='video-news-img'/>
+                        <CircleIcon className='circle'/>
+                        <PlayIcon className='play'/>
                     </div>
 
                     <div className='video-news-content'>
@@ -414,6 +399,9 @@ export default function PressCorner() {
     </div>
   );
 }
+
+
+
 
 
 
