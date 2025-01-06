@@ -1,0 +1,87 @@
+.aboutus-page{
+    display: flex;
+    padding: 40px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.aboutus-container-1{
+    display: flex;
+    width: 100%;
+    padding: 32px 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    border-radius: 24px;
+    background: var(--Bg-Color, #FFFDF7);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.aboutus-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9.752px;
+    align-self: stretch;
+    cursor: pointer;
+
+}
+
+.aboutus-title{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+
+}
+/* 
+.main-img{
+
+} */
+
+.about-content{
+    font-family: 'Antenna', sans-serif;
+    width: 100%;
+    text-align: start;
+    white-space: pre-wrap;
+
+
+}
+
+.subheading{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.main-content{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+
+}
+
+.aboutus-container-2{
+    display: flex;
+    width: 100%;
+    text-align: left;
+    border-radius: 24px;
+    background: var(--Bg-Color, #FFFDF7);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.about-vision-img{
+    display: flex;
+    width: 45%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    flex-shrink: 0;
+    border-radius: 12px 0px 0px 12px;
+    
+}
