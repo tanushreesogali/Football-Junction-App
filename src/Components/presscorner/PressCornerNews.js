@@ -17,7 +17,7 @@ import LeftArrow from "../LeftArrow";
 import { ReactComponent as TimeIcon } from '../icons/time-icon.svg';
 import { ReactComponent as CommentIncon } from '../icons/comment-icon.svg';
 
-import styles from "./PressCorner.module.css"
+// import styles from "./PressCorner.module.css"
 
 
 export default function PressCornerNews(){
