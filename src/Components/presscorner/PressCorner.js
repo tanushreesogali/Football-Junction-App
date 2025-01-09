@@ -9,7 +9,7 @@ import useVisibility from '../../Hooks/useVisibility';
 
 // images
 import videoimg from "../images/video-icon.png"
-import newsimg from "../images/News Item Image.png"
+// import newsimg from "../images/News Item Image.png"
 // components
 import RightArrow from "../RightArrow";
 import LeftArrow from "../LeftArrow";
@@ -192,7 +192,7 @@ export default function PressCorner() {
 
                     <div className={styles["news-section-container"]}>
                         <div className={styles["news-item-container"]}>
-                            <img src={newsimg} className={styles["news-item-image"]} alt="news-item-img" />
+                            <img className={styles["news-item-image"]} alt="news-item-img" />
                             <div className={styles["news-item-content"]}>
                                 <p className={styles["news-item-title"]}>
                                     India begin AFC Asian cup qualifiers journey Against Cambodia
