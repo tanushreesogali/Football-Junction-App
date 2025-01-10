@@ -1340,9 +1340,9 @@ body {
   .news-item-content{
     padding: 2% 10px;
   }
-  .news-item-container{
+  /* .news-item-container{
     width:95%;
-  }
+  } */
   .news-item-image{
     width: 30%;
   }
