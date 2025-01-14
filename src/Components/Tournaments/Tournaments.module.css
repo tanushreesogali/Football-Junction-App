@@ -1,0 +1,506 @@
+button{
+    font-family: 'Antenna','sans-serif';
+}
+.tournament-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 44px;
+    padding: 30px 0px;
+    width: 100%;
+}
+.tournament-card1{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.header-con-1{
+    display: flex;
+    padding: 12px 0px;
+    width: 30%;
+
+}
+.tournament-card1-title{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    white-space: nowrap;
+}
+
+.tournament-header-con{
+    display: flex;
+    width: 60%;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: var(--Glass-Effect, rgba(4, 4, 4, 0.08));
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(47.5px);
+    justify-content: space-between;
+    padding-left: 3%;
+    padding-right: 3%;
+
+}
+.header-content{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    text-align: left;
+    gap: 10px;
+    padding: 3%;
+
+}
+.header-title{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+
+}
+.header-subtitle{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.ball-game{
+    width: 35%;
+    flex-shrink: 0;
+}
+
+.tournament-card2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.body-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 3%;
+}
+.body-img{
+    width: 5%;
+    min-height: 61.422px;
+    min-width: 71.969px;
+}
+.body-content p{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 120%;
+}
+
+
+.active-in-tab{
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    
+    border: none;
+    background:none;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; 
+    border-bottom: 2px solid var(--Text-Primary, #1A1A1A);
+  }
+  
+  
+.tournament-tabs{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-family: 'Antenna', sans-serif;
+    
+}
+.tournament-tabs button{
+    cursor: pointer;
+    font-family: 'Antenna', sans-serif;
+}
+.in-tab{
+    border: none;
+    background: none;
+    display: flex;
+    padding: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.content{
+    text-align: left;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    max-width: 100%;
+}
+
+
+/* OVERVIEW  AND GUIDELINES*/
+.o-container{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 140%;
+}
+  
+.o-sectionTitle{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    color: black;
+}
+.o-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding-left: 1.7%;
+}
+
+/* MATCHES TABLE */
+.matches-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.tables{
+    width: 100%;
+    display: flex;
+    border-spacing: 10px 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.match-table-title{
+    white-space: nowrap;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+
+}
+.team{
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+
+}
+.score{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+
+}
+
+/* Points table */
+.pt-table-container{
+    max-width: 100%;
+}
+.pt-group{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* padding-left: 30px; */
+
+
+}
+.pt-table{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-spacing: 30px 10px; 
+    border-collapse: separate;
+    text-align: center;
+    max-width: 100%;
+}
+.pt-table thead tr th{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+
+}
+.pt-table tbody{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+
+
+}
+.pt-team-name{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+
+/* Gallery */
+.gallery-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+  }
+  .gallery-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+  
+  }
+  .gallery-container img{
+    width: 23%;
+    height: 23%;
+    border-radius: 6.75px;
+  }
+
+
+  /* Teams */
+
+  .t-container{
+    display: flex;
+
+  }
+
+  .t-companyButtons{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .t-companyBtn{
+    padding: 16px 24px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    background: none;
+
+  }
+  .t-activeBtn{
+    background-color: #000;
+    color: white;
+
+  }
+
+  .t-table{
+    border-spacing: 60px 20px;
+
+  }
+
+
+  .t-th{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+
+  .t-td{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+
+  }
+
+  .t-preview{
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+@media screen and (max-width: 950px){
+    .active-in-tab, .in-tab{
+        gap: 4px;
+        padding: 4px;
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 651px){
+    .body-content p{
+        font-size: 24px;
+    }
+    .tournament-card1{
+        flex-direction: column-reverse;
+        width: 100%;
+        gap: 20px;
+    }
+    .tournament-header-con{
+        width: 100%;
+        padding: 0;
+    }
+
+
+}
+@media screen and (max-width: 481px){
+    .header-title{
+        font-size: 24px;
+    }
+    .header-subtitle{
+        font-size: 16px;
+    }
+    .active-in-tab, .in-tab{
+        font-size: 12px;
+    }
+}
+
+@media (min-width:1000) and (max-width: 1200px){
+    .match-table-title{
+        white-space: normal;
+        font-size: 16px;
+    }
+    .tables{
+        width: 100%;
+        border-spacing: 20px 10px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .match-table-title{
+        white-space: nowrap;
+        font-size: 14px;
+    }
+    .tables{
+        width: 100%;
+        border-spacing: 15px 10px;
+    }
+    .tables tbody tr td{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .pt-table{
+       border-spacing: 15px 10px;
+    }
+}
+@media screen and (max-width: 800px){
+    .pt-group{
+       font-size: 14px;
+    }
+    .pt-table{
+        border-spacing: 10px 10px;
+    }
+    .matches-section{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .tables{
+        padding-right: 10px;
+    }
+    .tables tbody tr td{
+        font-size: 12px;
+    }
+    .tables thead tr th{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .tables{
+        border-spacing: 18px 10px;
+    }
+
+}
+
+@media (max-width:470px) and (max-width: 600px){
+    .pt-group{
+        font-size: 12.5px;
+    }
+    .pt-table{
+         border-spacing: 5px 10px;
+    }
+    .pt-table tbody tr td{
+        font-size: 12px;
+    }   
+    .pt-table thead tr th{
+        font-size: 12.5px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .t-table{
+        border-spacing: 35px 20px;
+    }
+
+}
+@media screen and (max-width: 650px){
+    .t-table{
+        border-spacing: 30px 10px;
+    }
+    .t-preview{
+        align-items: center;
+    }
+    .t-preview img{
+        width: 80%;
+    }
+    .t-companyBtn{
+        padding: 10px 16px;
+    }
+
+}
+
+@media screen and (max-width: 550px){
+    .t-table, .t-th {
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (max-width: 470px){
+    .pt-group{
+        font-size: 12px;
+    }
+    .pt-table{
+         border-spacing: 2.4px 10px;
+    }
+    .pt-table tbody tr td{
+        font-size: 11.5px;
+        font-weight: normal;
+    }   
+    .pt-table thead tr th{
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+

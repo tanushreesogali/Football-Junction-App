@@ -1,0 +1,237 @@
+h2{
+    color: var(--Action-Bt-Color, #245069);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+li{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+.initiative-para, .camp-guest, .in-content-div p{
+  font-size: 16px;
+}
+
+
+@media screen and (max-width: 500px) {
+    h2{
+        font-size: 16px;
+    }
+    li{
+        font-size: 12px;
+    }
+    .initiative-para,.camp-guest, .in-content-div p{
+        font-size: 12px;
+    }
+    .initiative-para-section p{
+        font-size: 12px;
+    }
+  
+}
+
+
+.press-news-page{
+    display: flex;
+    width: 100%;
+    padding: 32px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    border-radius: 24px;
+    background: var(--Bg-Color, #FFFDF7);
+  
+}
+
+.press-corner-title{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  .initiatives-image-container{
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .initiatives-image-container p{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+  }
+  .initiatives-image-container img{
+    display: flex;
+    width: 60%;
+    height: 155px;
+    border-radius: 6px;
+    opacity: 0.9;
+  }
+  .active-in-tab{
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    background: var(--Action-Bt-Color, #245069);
+    color: var(--Text-Secondary, #F4F4F4);
+    border: none;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+  }
+  
+  
+  .initiatives-tabs{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Antenna', sans-serif;
+    
+  }
+  .initiatives-tabs button{
+    cursor: pointer;
+    font-family: 'Antenna', sans-serif;
+  }
+  .in-tab{
+    border: none;
+    background: none;
+    display: flex;
+    padding: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+  }
+
+  
+/* training */
+.training-content, .camp-content, .memorial-content{
+    text-align: left;
+    width: 70%;
+  }
+  
+  /* General initiatives pages */
+  .in-content-div{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .in-content-div section{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .in-content-svg{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  /* Gallery */
+  .gallery-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+  }
+  .gallery-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+  
+  }
+  .gallery-container img{
+    width: 32%;
+    height: 32%;
+    border-radius: 6.75px;
+  
+  }
+  
+  /* MEMORIAL */
+  .mem-it-subtitle{
+    color: var(--Action-Bt-Color, #245069);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+
+
+  @media screen and (max-width: 500px) {
+    .initiatives-tabs{
+      width: 90%;
+    }
+    .training-content, .camp-content, .memorial-content{
+      width: 90%;
+    }
+    .initiatives-tabs button{
+      display: flex;
+      padding: 4px;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%;
+    }
+    .camp-guest{
+        font-size: 12px;
+    }
+  
+  }
+
+  @media (min-width: 500px) and (max-width: 800px) {
+    .initiatives-tabs{
+      width: 90%;
+    }
+    .training-content, .camp-content, .memorial-content{
+      width: 90%;
+    }
+    .initiatives-tabs button{
+      display: flex;
+      padding: 4px;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%;
+    }
+  }
+
+  @media (min-width: 651px) and (max-width: 1030px){
+    .initiatives-tabs{
+      width: 90%;
+    }
+    .training-content, .camp-content, .memorial-content{
+      width: 90%;
+    }
+  
+}
+
